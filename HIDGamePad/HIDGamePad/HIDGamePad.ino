@@ -7,7 +7,7 @@
 // the setup function runs once when you press reset or power the board
 
 #include "Joystick.h"
-const int TotalButtons = 8;
+const int TotalButtons = 20;
 // Create Joystick
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_GAMEPAD, TotalButtons, 0, true, true, false, false, false, false, false, false, false, false, false);
 
