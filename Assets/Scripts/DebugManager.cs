@@ -51,12 +51,27 @@ public class DebugManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        mouseCursorSpeed = AnalogJoyHandler.Instance.GetP1Potval() / Time.deltaTime;
+
         //P1_Debug.text = "p1";
         //P2_Debug.text = "p2";
         //Line_Debug.text = "line";
         //Text_Debug.text = "text \n text \n text";
 
-        Set_P1Debug(AnalogJoyHandler.Instance.GetP1Potval().ToString());
-        Set_P2Debug(AnalogJoyHandler.Instance.GetP2Potval().ToString());
+        //Set_P1Debug(AnalogJoyHandler.Instance.GetP1Potval().ToString());
+
+        if (mouseCursorSpeed > best) {
+            best = mouseCursorSpeed;
+        }
+        Set_P1Debug(best.ToString());
+        // Set_P2Debug(AnalogJoyHandler.Instance.GetP2Potval().ToString());
+        Set_P2Debug(mouseCursorSpeed.ToString()) ;
+
+
     }
+    float mouseCursorSpeed;
+    float best;
+ 
+
+public Rigidbody2D p2rb;
 }

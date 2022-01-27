@@ -1,4 +1,4 @@
-
+//#define ENABLE_LOGS
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,8 +53,8 @@ public class AnalogJoyHandler : MonoBehaviour
 
     void GetAllInputs()
     {
-        P1val = Mathf.Round(Input.GetAxis("Vertical1") * -100f) / 100f;
-        P2val = Mathf.Round(Input.GetAxis("Horizontal1") * -100f) / 100f;
+        P1val = Mathf.Round(Input.GetAxis("Vertical1") * -1000f) / 1000f;
+        P2val = Mathf.Round(Input.GetAxis("Horizontal1") * -1000f) / 1000f;
 
         for (int i = 0; i < 20; i++)
         {
@@ -89,7 +89,7 @@ public class AnalogJoyHandler : MonoBehaviour
 
     void CheckAll3ButtonPressed() { UpdateTimer(); }
     float timeRunning;
-    float laststate;
+   
 
     void UpdateTimer()
     {
@@ -102,13 +102,12 @@ public class AnalogJoyHandler : MonoBehaviour
                 //Debug.Log("yay");
                 //GameManager.Instance.ShowNavigation();
                 timeRunning = 0.0f; //Restart counting
-                laststate = 0;
+               
             }
         }
         else
         {
             timeRunning = 0.0f; //Restart counting
-            laststate = 0;
         }
     }
 }
