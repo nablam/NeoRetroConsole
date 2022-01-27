@@ -4,18 +4,19 @@ using UnityEngine;
 using TMPro;
 public class Tile : MonoBehaviour
 {
-    GameObject Titlebox;
-    GameObject HighLight;
+   public GameObject Titlebox;
+    public GameObject HighLight;
     public bool _isGameTile;
     public bool IsGameTile { get => _isGameTile;private set => _isGameTile = value; }
 
     public void Showme(bool onoff) {
-        HighLight.SetActive(false);
+       // Debug.Log(" hi " + Titlebox.GetComponent<TextMeshPro>().text + " " + onoff.ToString());
+        HighLight.SetActive(onoff);
         this.gameObject.SetActive(onoff);
     }
     public void HighLightMe(bool onoff) { HighLight.SetActive(onoff); }
 
-    void Start()
+    void Awake()
     {
     
         if (this.gameObject.transform.GetChild(0).gameObject.transform.childCount >0)
