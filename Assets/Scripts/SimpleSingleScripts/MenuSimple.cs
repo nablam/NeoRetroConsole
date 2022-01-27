@@ -10,6 +10,31 @@ public class MenuSimple : MonoBehaviour
     public Tile SpaceinvadersTile;
 
     public List<Tile> GameList;
+
+    private void OnEnable()
+    {
+        AnalogJoyHandler.ButtonPress += HeardButtonClic;
+    }
+
+    private void OnDisable()
+    {
+        AnalogJoyHandler.ButtonPress -= HeardButtonClic;
+    }
+
+    void HeardButtonClic(int argbutton)
+    {
+        Debug.Log("gamemanager heard PEW");
+        if (argbutton == 0)
+        {
+            
+                Debug.Log("PEW InMenu ");
+            if (GameManagerSimple.Instance.IndexOfCurGame != selecedGameIndex)
+            {
+                GameManagerSimple.Instance.IndexOfCurGame = selecedGameIndex;
+                GameManagerSimple.Instance.StartGameXandStopAllOthers();
+            }
+        }
+    }
     void Start()
     {
         GameList = new List<Tile>();
@@ -41,8 +66,8 @@ public class MenuSimple : MonoBehaviour
                 GameList[selecedGameIndex].HighLightMe(true);
             }
             else 
-                GameList[iterationIndex].HighLightMe(false); }
-
+                GameList[iterationIndex].HighLightMe(false);
+        }
     }
     public void ShowMenueOptions(bool argOnOff) { foreach (Tile atile in GameList) { atile.HighLightMe(argOnOff); } }
 }

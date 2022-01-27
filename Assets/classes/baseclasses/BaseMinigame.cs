@@ -19,9 +19,6 @@ public class BaseMinigame : MonoBehaviour , Iminigame
     public virtual void UpdatePlayers()
     {
         throw new System.NotImplementedException();
-     //   P1Obj.transform.position = new Vector3(P1Obj.transform.position.x, 6 * AnalogJoyHandler.Instance.GetP1Potval(), P1Obj.transform.position.z);
-      //  P2Obj.transform.position = new Vector3(P2Obj.transform.position.x, 6 * AnalogJoyHandler.Instance.GetP2Potval(), P2Obj.transform.position.z);
-
     }
     #endregion
 

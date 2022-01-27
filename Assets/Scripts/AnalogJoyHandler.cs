@@ -100,7 +100,7 @@ public class AnalogJoyHandler : MonoBehaviour
             {
                 //Do things
                 //Debug.Log("yay");
-                //GameManager.Instance.ShowNavigation();
+                GameManagerSimple.Instance.GotoMenue();
                 timeRunning = 0.0f; //Restart counting
                
             }

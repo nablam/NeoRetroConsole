@@ -88,21 +88,14 @@ public class WallPongMinigame : BaseMinigame
     public void DEtectCollisionEnter(Collision2D coll)
     {
         Debug.Log("BALL hit " + coll.collider.gameObject.name);
-
-
-
         Debug.DrawRay(coll.contacts[0].point, coll.contacts[0].normal, Color.green, 2, false);
-
 
         Vector2 inNormal = coll.contacts[0].normal;
         Vector2 newDirection = Vector2.Reflect(_curDirection, inNormal);
 
-
         _curDirection = newDirection;
 
-
         Debug.DrawRay(coll.contacts[0].point, newDirection, Color.magenta, 2, false);
-
 
         if (coll.collider.CompareTag("P1") || coll.collider.CompareTag("P2"))
         {
