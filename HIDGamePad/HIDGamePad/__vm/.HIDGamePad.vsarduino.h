@@ -16,6 +16,7 @@
 #define __AVR_atmega32u4__
 #define __AVR_ATmega32U4__
 #define __AVR_ATmega32u4__
+#define _VMDEBUG 1
 #define F_CPU 16000000L
 #define ARDUINO 108015
 #define ARDUINO_AVR_LEONARDO
@@ -91,5 +92,6 @@ typedef void *__builtin_va_list;
 #define pgm_read_ptr(address_short)   short()
 
 #include "HIDGamePad.ino"
+#include "OldDefinitions.ino"
 #endif
 #endif
