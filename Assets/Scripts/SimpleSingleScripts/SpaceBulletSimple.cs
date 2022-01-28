@@ -34,9 +34,35 @@ public class SpaceBulletSimple : MonoBehaviour, ISpaceBulletSimple
     //{
     //    Debug.Log("BALL hit ");
     //}
-    public void onco(Collision2D coll)
+
+
+    //public void OnCollisionEnter2D(Collision2D coll)
+    //{
+    //    Debug.Log("bullet hit smth");
+
+
+
+    //    if (coll.gameObject.CompareTag("Wall_Limits"))
+    //    {
+
+    //        Debug.Log("bullet hit WALL");
+    //    }
+
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-   
+      // Debug.Log("bullet hit smth");
+
+
+
+        if (collision.gameObject.CompareTag("Wall_Limits"))
+        {
+            RestPlace();
+
+           // Debug.Log("bullet hit WALL");
+        }
+
     }
 
     public void StartMove()

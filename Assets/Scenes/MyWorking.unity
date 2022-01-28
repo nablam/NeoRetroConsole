@@ -732,7 +732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186108618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7253254, y: 0.046421792, z: -21.921762}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1804301099}
@@ -1960,15 +1960,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cd5e89217477e844b8bdc1cde6b00c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7253254
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cd5e89217477e844b8bdc1cde6b00c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.046421792
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cd5e89217477e844b8bdc1cde6b00c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.921762
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cd5e89217477e844b8bdc1cde6b00c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4763,7 +4763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1130668179
 Transform:
   m_ObjectHideFlags: 0
@@ -5244,7 +5244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1277034356
 Transform:
   m_ObjectHideFlags: 0
@@ -5645,8 +5645,8 @@ GameObject:
   - component: {fileID: 1480817331}
   - component: {fileID: 1480817334}
   - component: {fileID: 1480817333}
-  - component: {fileID: 1480817332}
   - component: {fileID: 1480817335}
+  - component: {fileID: 1480817332}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Wall_Limits
@@ -5662,7 +5662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480817330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2746744, y: -0.046421792, z: 21.921762}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 186108619}
@@ -5678,7 +5678,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5751,7 +5751,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480817330}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5763,7 +5763,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &1523150217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,8 +6807,8 @@ GameObject:
   - component: {fileID: 1804301099}
   - component: {fileID: 1804301102}
   - component: {fileID: 1804301101}
-  - component: {fileID: 1804301100}
   - component: {fileID: 1804301103}
+  - component: {fileID: 1804301100}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Wall_Limits
@@ -6824,7 +6824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804301098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7253254, y: -6.546422, z: 21.921762}
+  m_LocalPosition: {x: 0, y: -6.546422, z: 0}
   m_LocalScale: {x: 15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 186108619}
@@ -6840,7 +6840,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6913,7 +6913,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804301098}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6925,7 +6925,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &1871281788
 GameObject:
   m_ObjectHideFlags: 0
@@ -7504,8 +7504,8 @@ GameObject:
   - component: {fileID: 2029890847}
   - component: {fileID: 2029890850}
   - component: {fileID: 2029890849}
-  - component: {fileID: 2029890848}
   - component: {fileID: 2029890851}
+  - component: {fileID: 2029890848}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Wall_Limits
@@ -7521,7 +7521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029890846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7253254, y: 6.453578, z: 21.921762}
+  m_LocalPosition: {x: 0, y: 6.453578, z: 0}
   m_LocalScale: {x: 15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 186108619}
@@ -7537,7 +7537,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7610,7 +7610,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029890846}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -7622,7 +7622,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &2101957715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7767,8 +7767,8 @@ GameObject:
   - component: {fileID: 2114227545}
   - component: {fileID: 2114227548}
   - component: {fileID: 2114227547}
-  - component: {fileID: 2114227546}
   - component: {fileID: 2114227549}
+  - component: {fileID: 2114227546}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Wall_Limits
@@ -7784,7 +7784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114227544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.725326, y: -0.046421792, z: 21.921762}
+  m_LocalPosition: {x: 8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 186108619}
@@ -7800,7 +7800,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7873,7 +7873,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114227544}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -7885,4 +7885,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7

@@ -43,13 +43,32 @@ public class SpaceInvadersMinigame : BaseMinigame
     {
         MyEventsManager.OnBallCollided += DEtectCollisionEnter;
         MyEventsManager.OnEnemyTriggered += DetctEnemyDied;
-       // ListofEnemies = new List<IEnemySimple>();
+        AnalogJoyHandler.ButtonPress += HeardButtonClic;
+        // ListofEnemies = new List<IEnemySimple>();
 
     }
     private void OnDisable()
     {
         MyEventsManager.OnBallCollided -= DEtectCollisionEnter;
         MyEventsManager.OnEnemyTriggered -= DetctEnemyDied;
+        AnalogJoyHandler.ButtonPress -= HeardButtonClic;
+    }
+
+  
+
+    void HeardButtonClic(int argbutton)
+    {
+        Debug.Log("gamemanager heard PEW");
+        if (argbutton == 0)
+        {
+            b1.StartMove();
+
+
+        }
+        if (argbutton == 2)
+        {
+            b2.StartMove();
+        }
     }
 
     public override void FindMyObjects()
