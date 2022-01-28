@@ -27,6 +27,8 @@ public class SpaceBulletSimple : MonoBehaviour, ISpaceBulletSimple
     {
         transform.position += transform.up * _curSpeed * Time.deltaTime;
 
+        if (transform.position.y >= 7) { RestPlace(); }
+
     }
 
 
@@ -50,20 +52,20 @@ public class SpaceBulletSimple : MonoBehaviour, ISpaceBulletSimple
 
     //}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-      // Debug.Log("bullet hit smth");
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //  // Debug.Log("bullet hit smth");
 
 
 
-        if (collision.gameObject.CompareTag("Wall_Limits"))
-        {
-            RestPlace();
+    //    if (collision.gameObject.CompareTag("Wall_Limits"))
+    //    {
+    //        RestPlace();
 
-           // Debug.Log("bullet hit WALL");
-        }
+    //       // Debug.Log("bullet hit WALL");
+    //    }
 
-    }
+    //}
 
     public void StartMove()
     {
