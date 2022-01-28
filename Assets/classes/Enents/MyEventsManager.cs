@@ -26,6 +26,11 @@ public class MyEventsManager : MonoBehaviour
     {
         if (OnBallCollided != null) OnBallCollided(argcoll);
     }
-
+    public delegate void EnemyTriggerEVENT(Collider2D argcoll, int argID);
+    public static event EnemyTriggerEVENT OnEnemyTriggered;
+    public static void Call_EnemyTriggered(Collider2D argcoll, int argID)
+    {
+        if (OnEnemyTriggered != null) OnEnemyTriggered(argcoll, argID);
+    }
     #endregion
 }

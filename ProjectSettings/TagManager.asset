@@ -9,6 +9,11 @@ TagManager:
   - Wall_Limits
   - Ball
   - NPC
+  - Enemy
+  - Bullet_P1
+  - Bullet_P2
+  - GunPoint_P1
+  - GunPoint_P2
   layers:
   - Default
   - TransparentFX

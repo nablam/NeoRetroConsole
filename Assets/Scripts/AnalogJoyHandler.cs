@@ -39,7 +39,7 @@ public class AnalogJoyHandler : MonoBehaviour
     void Start()
     {
         //JoySticksAnalog.Instance.getstaticdatas
-        Debug.Log("started");
+        Debug.Log("started Joystick");
     }
     //string tmp = "";
     void FixedUpdate()
